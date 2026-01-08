@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+		function sum() {
+ 			var number1 = document.getElementById('number1');
+			var number1Entered = number1.value;
+			var number2 = document.getElementById('number2')
+			var number2Entered = number2.value
+			var result = +number1Entered + +number2Entered;
+			alert('Результат : ' + result);}
+		function ymn() {
+ 			var number1 = document.getElementById('number1');
+			var number1Entered = number1.value;
+			var number2 = document.getElementById('number2')
+			var number2Entered = number2.value
+			var result = number1Entered * number2Entered;
+			alert('Результат : ' + result);}
+
+		function minus() {
+ 			var number1 = document.getElementById('number1');
+			var number1Entered = number1.value;
+			var number2 = document.getElementById('number2')
+			var number2Entered = number2.value
+			var result = number1Entered - number2Entered;
+			alert('Результат : ' + result);}
+		function del() {
+ 			var number1 = document.getElementById('number1');
+			var number1Entered = number1.value;
+			var number2 = document.getElementById('number2')
+			var number2Entered = number2.value
+			var result = number1Entered / number2Entered;
+			alert('Результат : ' + result);}
+		function cred() {
+ 			var number1 = document.getElementById('number1');
+			var number1Entered = number1.value;
+			var number2 = document.getElementById('number2')
+			var number2Entered = number2.value
+			var result = (+number1Entered + +number2Entered) /2 ;
+			alert('Результат : ' + result);}
+	</script>
+	<title>Калькулятор</title>
+</head>
+<body>
+	<form>
+	<p>Число 1:</p><input type="number" id="number1"> <br><br>
+	<p>Число 2:</p><input type="number" id="number2"> <br><br>
+	</form>
+	<button  onclick="return ymn()" style="background-color: red;">Умножение</button> <br>
+	<button  onclick="return del()" style="background-color: green">Деление</button><br>
+	<button  onclick="return minus()" style="background-color: orange;">Вычитание</button> <br>
+	<button  onclick="return sum()" style="background-color: blue;" >Сложение</button><br>
+	<button  onclick="return cred()" style="background-color: yellow;">Сред</button><br>
+</body>
+</html>
